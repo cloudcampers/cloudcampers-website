@@ -16,6 +16,21 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - **API codegen**: Orval (from OpenAPI spec)
 - **Build**: esbuild (CJS bundle)
 
+## Artifacts
+
+### CloudCampers Website (`artifacts/cloudcampers`)
+- **Type**: react-vite (frontend-only, no backend)
+- **URL**: `/` (root preview path)
+- **Purpose**: Professional Salesforce & MuleSoft consulting website for cloudcampers.net
+- **Pages**:
+  - `/` — Home: hero, stats, services overview, why-us, testimonials, CTA
+  - `/services` — Full breakdown of Salesforce and MuleSoft services
+  - `/about` — Company mission, values, team/leadership, certifications
+  - `/case-studies` — 3 detailed case studies with metrics
+  - `/contact` — Contact form with service interest dropdown
+- **Design**: Deep navy dark theme, electric blue primary, gradient text, framer-motion animations
+- **Dependencies**: Framer Motion, react-icons (ri + si), wouter routing
+
 ## Key Commands
 
 - `pnpm run typecheck` — full typecheck across all packages
