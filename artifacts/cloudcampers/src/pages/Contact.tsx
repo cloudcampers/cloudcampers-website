@@ -79,7 +79,6 @@ export default function Contact() {
           </motion.div>
         </div>
       </section>
-
       {/* Main Content */}
       <section className="py-16 px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
@@ -96,7 +95,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <div className="text-xs text-muted-foreground mb-0.5">Email</div>
-                        <a href="mailto:hello@cloudcampers.net" className="text-sm font-medium text-foreground hover:text-primary transition-colors">hello@cloudcampers.net</a>
+                        <a href="mailto:hello@cloudcampers.net" className="text-sm font-medium text-foreground hover:text-primary transition-colors">info@cloudcampers.net</a>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
