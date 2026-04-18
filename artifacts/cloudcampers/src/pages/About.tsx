@@ -2,7 +2,8 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "wouter";
 import { RiArrowRightLine, RiCheckLine } from "react-icons/ri";
-import { SiSalesforce, SiMulesoft } from "react-icons/si";
+import { SalesforceMark } from "@/components/SalesforceLogo";
+import { MulesoftMark } from "@/components/MulesoftLogo";
 
 function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef(null);
@@ -116,7 +117,7 @@ export default function About() {
                 <h3 className="text-lg font-bold mb-6 text-foreground">Our Certifications</h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-4 p-4 rounded-xl bg-[hsl(220,28%,14%)] border border-[hsl(220,25%,20%)]">
-                    <SiSalesforce size={24} className="text-[#00A1E0] mt-0.5 shrink-0" />
+                    <SalesforceMark size={28} className="mt-0.5 shrink-0" />
                     <div>
                       <div className="font-semibold text-sm text-foreground mb-2">Salesforce Certified Partner</div>
                       <div className="space-y-1.5">
@@ -130,7 +131,7 @@ export default function About() {
                     </div>
                   </div>
                   <div className="flex items-start gap-4 p-4 rounded-xl bg-[hsl(220,28%,14%)] border border-[hsl(220,25%,20%)]">
-                    <SiMulesoft size={24} className="text-[#00A1E0] mt-0.5 shrink-0" />
+                    <MulesoftMark size={28} className="mt-0.5 shrink-0" />
                     <div>
                       <div className="font-semibold text-sm text-foreground mb-2">MuleSoft Certified Partner</div>
                       <div className="space-y-1.5">

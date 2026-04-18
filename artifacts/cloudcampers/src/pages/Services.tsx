@@ -9,7 +9,8 @@ import {
   RiSettings4Line,
   RiCpuLine,
 } from "react-icons/ri";
-import { SiSalesforce, SiMulesoft } from "react-icons/si";
+import { SalesforceMark } from "@/components/SalesforceLogo";
+import { MulesoftMark } from "@/components/MulesoftLogo";
 
 function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef(null);
@@ -108,7 +109,7 @@ export default function Services() {
           <FadeIn>
             <div className="flex items-center gap-4 mb-12">
               <div className="w-12 h-12 rounded-xl bg-[#00A1E0]/10 border border-[#00A1E0]/20 flex items-center justify-center">
-                <SiSalesforce size={22} className="text-[#00A1E0]" />
+                <SalesforceMark size={28} />
               </div>
               <div>
                 <h2 className="text-2xl md:text-3xl font-extrabold text-foreground">Salesforce Services</h2>
@@ -144,7 +145,7 @@ export default function Services() {
           <FadeIn>
             <div className="flex items-center gap-4 mb-12">
               <div className="w-12 h-12 rounded-xl bg-[#00A1E0]/10 border border-[#00A1E0]/20 flex items-center justify-center">
-                <SiMulesoft size={22} className="text-[#00A1E0]" />
+                <MulesoftMark size={28} />
               </div>
               <div>
                 <h2 className="text-2xl md:text-3xl font-extrabold text-foreground">MuleSoft Integration</h2>

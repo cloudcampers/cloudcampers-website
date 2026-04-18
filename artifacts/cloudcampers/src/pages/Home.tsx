@@ -11,7 +11,8 @@ import {
   RiStarFill,
   RiDoubleQuotesL,
 } from "react-icons/ri";
-import { SiSalesforce, SiMulesoft } from "react-icons/si";
+import { SalesforceMark } from "@/components/SalesforceLogo";
+import { MulesoftMark } from "@/components/MulesoftLogo";
 
 const stats = [
   { value: "200+", label: "Projects Delivered" },
@@ -22,25 +23,25 @@ const stats = [
 
 const services = [
   {
-    icon: SiSalesforce,
+    renderIcon: () => <SalesforceMark size={24} />,
     title: "Salesforce Implementation",
     description: "End-to-end Salesforce deployments tailored to your business model. Sales Cloud, Service Cloud, Marketing Cloud, and more.",
     tags: ["Sales Cloud", "Service Cloud", "CPQ"],
   },
   {
-    icon: SiMulesoft,
+    renderIcon: () => <MulesoftMark size={24} />,
     title: "MuleSoft Integration",
     description: "Connect your enterprise systems with robust, scalable API-led integrations built on Anypoint Platform.",
     tags: ["Anypoint Platform", "API Design", "iPaaS"],
   },
   {
-    icon: RiFlowChart,
+    renderIcon: () => <RiFlowChart size={22} className="text-primary" />,
     title: "Process Automation",
     description: "Streamline operations with Salesforce Flow, Process Builder, and intelligent automation workflows.",
     tags: ["Flow Builder", "Automation", "AI"],
   },
   {
-    icon: RiBarChartBoxLine,
+    renderIcon: () => <RiBarChartBoxLine size={22} className="text-primary" />,
     title: "Analytics & Reporting",
     description: "Unlock business intelligence with Salesforce Einstein Analytics and custom report dashboards.",
     tags: ["Einstein Analytics", "Tableau", "CRM Analytics"],
@@ -148,13 +149,13 @@ export default function Home() {
           >
             <p className="text-xs text-muted-foreground uppercase tracking-widest">Certified Partners</p>
             <div className="flex items-center gap-8">
-              <div className="flex items-center gap-2.5 text-muted-foreground/60">
-                <SiSalesforce size={22} className="text-[#00A1E0]" />
+              <div className="flex items-center gap-2.5 text-muted-foreground/70">
+                <SalesforceMark size={22} />
                 <span className="text-sm font-medium">Salesforce Partner</span>
               </div>
               <div className="w-px h-5 bg-white/10" />
-              <div className="flex items-center gap-2.5 text-muted-foreground/60">
-                <SiMulesoft size={20} className="text-[#00A1E0]" />
+              <div className="flex items-center gap-2.5 text-muted-foreground/70">
+                <MulesoftMark size={20} />
                 <span className="text-sm font-medium">MuleSoft Partner</span>
               </div>
             </div>
@@ -209,7 +210,7 @@ export default function Home() {
               <FadeIn key={service.title} delay={i * 0.1}>
                 <div className="group p-8 rounded-2xl border-gradient bg-[hsl(220,28%,11%)] hover:bg-[hsl(220,28%,13%)] transition-all duration-300 cursor-default hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-6 group-hover:bg-primary/15 group-hover:border-primary/30 transition-all">
-                    <service.icon size={22} className="text-primary" />
+                    {service.renderIcon()}
                   </div>
                   <h3 className="text-xl font-bold text-foreground mb-3">{service.title}</h3>
                   <p className="text-muted-foreground leading-relaxed mb-5">{service.description}</p>
