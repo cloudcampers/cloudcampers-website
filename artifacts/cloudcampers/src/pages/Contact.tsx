@@ -104,7 +104,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <div className="text-xs text-muted-foreground mb-0.5">Phone</div>
-                        <a href="tel:+18005551234" className="text-sm font-medium text-foreground hover:text-primary transition-colors">+1 (800) 555-1234</a>
+                        <a href="tel:+18005551234" className="text-sm font-medium text-foreground hover:text-primary transition-colors">+1 (281) 750-9514</a>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
