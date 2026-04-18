@@ -31,7 +31,7 @@ const salesforceServices = [
   {
     name: "Sales Cloud",
     description: "Supercharge your revenue team with intelligent opportunity management, forecasting, and pipeline automation tailored to your sales motion.",
-    features: ["Opportunity & Pipeline Management", "Territory & Quota Management", "Einstein Forecasting", "CPQ Integration"],
+    features: ["Opportunity & Pipeline Management", "Territory & Quota Management", "Einstein Forecasting", "Agentforce for Sales"],
   },
   {
     name: "Service Cloud",
@@ -44,9 +44,9 @@ const salesforceServices = [
     features: ["Journey Builder", "Email Studio", "Mobile Studio", "Advertising Studio"],
   },
   {
-    name: "CPQ & Billing",
-    description: "Eliminate revenue leakage with a streamlined quoting-to-cash process. Configure complex products, generate accurate quotes, and automate billing.",
-    features: ["Product & Pricing Configuration", "Guided Selling", "Contract Lifecycle Management", "Subscription Billing"],
+    name: "Agentforce",
+    description: "Deploy autonomous AI agents that take action across your Salesforce ecosystem — handling service cases, qualifying leads, and driving pipeline without human intervention.",
+    features: ["AI Agent Configuration", "Prompt Engineering & Grounding", "Agent Actions & Flows", "Human Handoff Workflows"],
   },
   {
     name: "Experience Cloud",

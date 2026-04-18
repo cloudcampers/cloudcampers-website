@@ -29,7 +29,7 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-foreground mb-4 uppercase tracking-wider">Services</h4>
             <ul className="space-y-2.5">
-              {["Salesforce Implementation", "MuleSoft Integration", "Sales Cloud", "Service Cloud", "Marketing Cloud", "CPQ & Billing"].map((s) => (
+              {["Salesforce Implementation", "MuleSoft Integration", "Sales Cloud", "Service Cloud", "Marketing Cloud", "Agentforce"].map((s) => (
                 <li key={s}>
                   <Link href="/services">
                     <span className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer">{s}</span>

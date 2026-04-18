@@ -23,7 +23,7 @@ const serviceOptions = [
   "Sales Cloud",
   "Service Cloud",
   "Marketing Cloud",
-  "CPQ & Billing",
+  "Agentforce",
   "Experience Cloud",
   "Salesforce Health Check / Audit",
   "Analytics & Einstein",

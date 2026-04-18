@@ -26,7 +26,7 @@ const services = [
     renderIcon: () => <SalesforceMark size={24} />,
     title: "Salesforce Implementation",
     description: "End-to-end Salesforce deployments tailored to your business model. Sales Cloud, Service Cloud, Marketing Cloud, and more.",
-    tags: ["Sales Cloud", "Service Cloud", "CPQ"],
+    tags: ["Sales Cloud", "Service Cloud", "Agentforce"],
   },
   {
     renderIcon: () => <MulesoftMark size={24} />,
