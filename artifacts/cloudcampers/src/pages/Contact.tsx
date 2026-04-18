@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { RiMailLine, RiPhoneLine, RiMapPinLine, RiLinkedinFill, RiCheckLine, RiSendPlaneLine } from "react-icons/ri";
+import { RiMailLine, RiPhoneLine, RiMapPinLine, RiCheckLine, RiSendPlaneLine } from "react-icons/ri";
 
 function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef(null);
@@ -115,15 +115,6 @@ export default function Contact() {
                         <div className="text-xs text-muted-foreground mb-0.5">Headquarters</div>
                         <div className="text-sm font-medium text-foreground">United States</div>
                         <div className="text-xs text-muted-foreground">Remote-first, serving clients globally</div>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-4">
-                      <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
-                        <RiLinkedinFill size={16} className="text-primary" />
-                      </div>
-                      <div>
-                        <div className="text-xs text-muted-foreground mb-0.5">LinkedIn</div>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-foreground hover:text-primary transition-colors">CloudCampers on LinkedIn</a>
                       </div>
                     </div>
                   </div>
