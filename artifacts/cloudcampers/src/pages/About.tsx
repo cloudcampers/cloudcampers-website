@@ -69,7 +69,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto text-center relative">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <span className="text-xs font-semibold text-primary uppercase tracking-widest mb-4 block">About CloudCampers</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-['Playfair_Display'] font-semibold tracking-tight mb-6">
               Built by Practitioners,{" "}
               <span className="gradient-text">For Practitioners</span>
             </h1>
@@ -81,13 +81,13 @@ export default function About() {
       </section>
 
       {/* Mission */}
-      <section className="py-20 px-6 lg:px-8 bg-[hsl(220,28%,10%)]">
+      <section className="py-20 px-6 lg:px-8 bg-[#FDFBF7]">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <FadeIn>
               <div>
                 <span className="text-xs font-semibold text-primary uppercase tracking-widest mb-4 block">Our Mission</span>
-                <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-6">
+                <h2 className="text-3xl md:text-4xl font-['Playfair_Display'] font-semibold tracking-tight mb-6">
                   We Make Complex Systems Simple to Operate
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
@@ -113,10 +113,10 @@ export default function About() {
               </div>
             </FadeIn>
             <FadeIn delay={0.2}>
-              <div className="p-8 rounded-2xl border-gradient bg-[hsl(220,28%,11%)]">
-                <h3 className="text-lg font-bold mb-6 text-foreground">Our Certifications</h3>
+              <div className="p-8 rounded border border-[#E5E7EB] bg-white">
+                <h3 className="text-lg font-semibold mb-6 text-foreground">Our Certifications</h3>
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4 p-4 rounded-xl bg-[hsl(220,28%,14%)] border border-[hsl(220,25%,20%)]">
+                  <div className="flex items-start gap-4 p-4 rounded bg-[#F9FAFB] border border-[#E5E7EB]">
                     <SalesforceMark size={28} className="mt-0.5 shrink-0" />
                     <div>
                       <div className="font-semibold text-sm text-foreground mb-2">Salesforce Certified Partner</div>
@@ -130,7 +130,7 @@ export default function About() {
                       </div>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4 p-4 rounded-xl bg-[hsl(220,28%,14%)] border border-[hsl(220,25%,20%)]">
+                  <div className="flex items-start gap-4 p-4 rounded bg-[#F9FAFB] border border-[#E5E7EB]">
                     <MulesoftMark size={28} className="mt-0.5 shrink-0" />
                     <div>
                       <div className="font-semibold text-sm text-foreground mb-2">MuleSoft Certified Partner</div>
@@ -157,13 +157,13 @@ export default function About() {
           <FadeIn>
             <div className="text-center mb-14">
               <span className="text-xs font-semibold text-primary uppercase tracking-widest mb-3 block">Our Values</span>
-              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">What We Stand For</h2>
+              <h2 className="text-3xl md:text-4xl font-['Playfair_Display'] font-semibold tracking-tight">What We Stand For</h2>
             </div>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {values.map((v, i) => (
               <FadeIn key={v.title} delay={i * 0.1}>
-                <div className="p-7 rounded-2xl border border-[hsl(220,25%,18%)] bg-[hsl(220,28%,11%)] hover:border-primary/30 transition-colors">
+                <div className="p-7 rounded border border-[#E5E7EB] bg-white hover:border-[#2D6A4F]/40 transition-colors">
                   <div className="w-8 h-8 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center mb-4">
                     <span className="text-xs font-bold text-primary">{String(i + 1).padStart(2, "0")}</span>
                   </div>
@@ -177,19 +177,19 @@ export default function About() {
       </section>
 
       {/* Team */}
-      <section className="py-20 px-6 lg:px-8 bg-[hsl(220,28%,10%)]">
+      <section className="py-20 px-6 lg:px-8 bg-[#FDFBF7]">
         <div className="max-w-7xl mx-auto">
           <FadeIn>
             <div className="text-center mb-14">
               <span className="text-xs font-semibold text-primary uppercase tracking-widest mb-3 block">Leadership</span>
-              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">The Team Behind the Work</h2>
+              <h2 className="text-3xl md:text-4xl font-['Playfair_Display'] font-semibold tracking-tight">The Team Behind the Work</h2>
             </div>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {team.map((member, i) => (
               <FadeIn key={member.name} delay={i * 0.12}>
-                <div className="p-8 rounded-2xl border-gradient bg-[hsl(220,28%,11%)] text-center">
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/30 to-violet-600/30 border border-primary/20 flex items-center justify-center mx-auto mb-5">
+                <div className="p-8 rounded border border-[#E5E7EB] bg-white text-center">
+                  <div className="w-16 h-16 rounded bg-[#2D6A4F]/15 border border-[#2D6A4F]/20 flex items-center justify-center mx-auto mb-5">
                     <span className="text-xl font-extrabold text-primary">{member.name.split(" ").map(n => n[0]).join("")}</span>
                   </div>
                   <h3 className="text-lg font-bold text-foreground mb-1">{member.name}</h3>
@@ -211,10 +211,10 @@ export default function About() {
       <section className="py-20 px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <FadeIn>
-            <h2 className="text-3xl font-extrabold mb-4">Ready to Work with Us?</h2>
-            <p className="text-muted-foreground text-lg mb-8">Let's talk about your challenges and how CloudCampers can help.</p>
+            <h2 className="text-3xl font-['Playfair_Display'] font-semibold mb-4">Ready to Work with Us?</h2>
+            <p className="text-muted-foreground text-lg mb-8 font-light">Let's talk about your challenges and how CloudCampers can help.</p>
             <Link href="/contact">
-              <span className="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold bg-primary text-[hsl(220,30%,8%)] rounded-xl hover:bg-primary/90 transition-all cursor-pointer shadow-xl shadow-primary/30 hover:-translate-y-0.5">
+              <span className="inline-flex items-center gap-2 px-8 py-4 text-base font-medium bg-[#2D6A4F] text-white rounded hover:bg-[#1B4332] transition-all cursor-pointer">
                 Get in Touch <RiArrowRightLine size={18} />
               </span>
             </Link>

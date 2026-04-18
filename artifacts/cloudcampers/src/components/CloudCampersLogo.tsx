@@ -21,7 +21,7 @@ export function CloudCampersMark({ size = 36, className = "" }: MarkProps) {
       {/* Cloud body */}
       <path
         d="M37 33H13a9 9 0 01-1.5-17.87A11 11 0 0132 18.3 7 7 0 0137 33z"
-        fill="#00A1E0"
+        fill="#2D6A4F"
       />
       {/* Mountain/tent peak */}
       <path
@@ -60,8 +60,8 @@ export function CloudCampersFull({ height = 36, className = "" }: FullProps) {
           fontFamily: "'Inter', 'SF Pro Display', system-ui, sans-serif",
         }}
       >
-        <span style={{ color: "#00A1E0" }}>Cloud</span>
-        <span style={{ color: "#E2E8F0" }}>Campers</span>
+        <span style={{ color: "#2D6A4F" }}>Cloud</span>
+        <span style={{ color: "#1C1C1E" }}>Campers</span>
       </span>
     </div>
   );

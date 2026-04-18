@@ -28,7 +28,9 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
   - `/about` — Company mission, values, team/leadership, certifications
   - `/case-studies` — 3 detailed case studies with metrics
   - `/contact` — Contact form with service interest dropdown
-- **Design**: Deep navy dark theme, electric blue primary, gradient text, framer-motion animations
+- **Design**: Trusted Advisor theme — warm cream (#FAF8F4) background, forest green (#2D6A4F) primary, Playfair Display serif headings, Inter body text, dark testimonial section (#1C1C1E), framer-motion animations
+- **Logo**: Cloud + tent-peak SVG in forest green (#2D6A4F) with "CloudCampers" wordmark (green/charcoal)
+- **Services**: Sales Cloud, Service Cloud, Marketing Cloud, Agentforce, Experience Cloud, MuleSoft, Process Automation, Analytics
 - **Dependencies**: Framer Motion, react-icons (ri + si), wouter routing
 
 ## Key Commands

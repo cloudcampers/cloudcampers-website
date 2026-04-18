@@ -92,7 +92,7 @@ export default function Services() {
         <div className="max-w-4xl mx-auto text-center relative">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <span className="text-xs font-semibold text-primary uppercase tracking-widest mb-4 block">Our Services</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-['Playfair_Display'] font-semibold tracking-tight mb-6">
               Full-Spectrum Consulting for{" "}
               <span className="gradient-text">Modern Enterprises</span>
             </h1>
@@ -108,11 +108,11 @@ export default function Services() {
         <div className="max-w-7xl mx-auto">
           <FadeIn>
             <div className="flex items-center gap-4 mb-12">
-              <div className="w-12 h-12 rounded-xl bg-[#00A1E0]/10 border border-[#00A1E0]/20 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-xl bg-[#2D6A4F]/10 border border-[#2D6A4F]/20 flex items-center justify-center">
                 <SalesforceMark size={28} />
               </div>
               <div>
-                <h2 className="text-2xl md:text-3xl font-extrabold text-foreground">Salesforce Services</h2>
+                <h2 className="text-2xl md:text-3xl font-['Playfair_Display'] font-semibold text-foreground">Salesforce Services</h2>
                 <p className="text-muted-foreground text-sm mt-0.5">Cloud implementations, customizations, and ongoing optimization</p>
               </div>
             </div>
@@ -121,7 +121,7 @@ export default function Services() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {salesforceServices.map((service, i) => (
               <FadeIn key={service.name} delay={i * 0.08}>
-                <div className="h-full p-7 rounded-2xl border border-[hsl(220,25%,18%)] bg-[hsl(220,28%,11%)] hover:border-primary/30 hover:bg-[hsl(220,28%,12%)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/8">
+                <div className="h-full p-7 rounded border border-[#E5E7EB] bg-white hover:border-[#2D6A4F]/40 hover:bg-[#FAFAFA] transition-all duration-300">
                   <h3 className="text-lg font-bold text-foreground mb-3">{service.name}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed mb-5">{service.description}</p>
                   <ul className="space-y-2">
@@ -140,15 +140,15 @@ export default function Services() {
       </section>
 
       {/* MuleSoft Services */}
-      <section className="py-20 px-6 lg:px-8 bg-[hsl(220,28%,10%)]">
+      <section className="py-20 px-6 lg:px-8 bg-[#FDFBF7]">
         <div className="max-w-7xl mx-auto">
           <FadeIn>
             <div className="flex items-center gap-4 mb-12">
-              <div className="w-12 h-12 rounded-xl bg-[#00A1E0]/10 border border-[#00A1E0]/20 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-xl bg-[#2D6A4F]/10 border border-[#2D6A4F]/20 flex items-center justify-center">
                 <MulesoftMark size={28} />
               </div>
               <div>
-                <h2 className="text-2xl md:text-3xl font-extrabold text-foreground">MuleSoft Integration</h2>
+                <h2 className="text-2xl md:text-3xl font-['Playfair_Display'] font-semibold text-foreground">MuleSoft Integration</h2>
                 <p className="text-muted-foreground text-sm mt-0.5">API-led connectivity and enterprise integration architecture</p>
               </div>
             </div>
@@ -157,7 +157,7 @@ export default function Services() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {mulesoftServices.map((service, i) => (
               <FadeIn key={service.name} delay={i * 0.1}>
-                <div className="h-full p-8 rounded-2xl border-gradient bg-[hsl(220,28%,11%)] hover:bg-[hsl(220,28%,13%)] transition-all duration-300 hover:-translate-y-1">
+                <div className="h-full p-8 rounded border border-[#E5E7EB] bg-white hover:border-[#2D6A4F]/40 transition-all duration-300">
                   <h3 className="text-xl font-bold text-foreground mb-3">{service.name}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed mb-6">{service.description}</p>
                   <div className="flex flex-wrap gap-2">
@@ -176,7 +176,7 @@ export default function Services() {
       <section className="py-20 px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <FadeIn>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-foreground mb-10">Additional Capabilities</h2>
+            <h2 className="text-2xl md:text-3xl font-['Playfair_Display'] font-semibold text-foreground mb-10">Additional Capabilities</h2>
           </FadeIn>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
@@ -186,7 +186,7 @@ export default function Services() {
               { icon: RiSettings4Line, title: "Managed Services", desc: "Ongoing admin support, monitoring, and platform governance" },
             ].map((item, i) => (
               <FadeIn key={item.title} delay={i * 0.1}>
-                <div className="p-6 rounded-2xl border border-[hsl(220,25%,18%)] bg-[hsl(220,28%,11%)] hover:border-primary/30 transition-colors">
+                <div className="p-6 rounded border border-[#E5E7EB] bg-white hover:border-[#2D6A4F]/40 transition-colors">
                   <item.icon size={24} className="text-primary mb-4" />
                   <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
                   <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
@@ -201,14 +201,13 @@ export default function Services() {
       <section className="py-20 px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <FadeIn>
-            <div className="relative p-12 rounded-3xl overflow-hidden text-center border border-primary/20 bg-gradient-to-br from-primary/10 via-[hsl(220,28%,12%)] to-violet-900/10">
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
-              <h2 className="text-2xl md:text-3xl font-extrabold mb-4">Not sure where to start?</h2>
-              <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">
+            <div className="p-12 rounded text-center border border-[#E5E7EB] bg-[#FDFBF7]">
+              <h2 className="text-2xl md:text-3xl font-['Playfair_Display'] font-semibold text-[#1C1C1E] mb-4">Not sure where to start?</h2>
+              <p className="text-[#6B7280] text-lg mb-8 max-w-xl mx-auto font-light">
                 We offer complimentary discovery calls to assess your current landscape and identify quick wins.
               </p>
               <Link href="/contact">
-                <span className="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold bg-primary text-[hsl(220,30%,8%)] rounded-xl hover:bg-primary/90 transition-all cursor-pointer shadow-xl shadow-primary/30 hover:-translate-y-0.5">
+                <span className="inline-flex items-center gap-2 px-8 py-4 text-base font-medium bg-[#2D6A4F] text-white rounded hover:bg-[#1B4332] transition-all cursor-pointer">
                   Schedule Free Discovery Call
                   <RiArrowRightLine size={18} />
                 </span>

@@ -75,7 +75,7 @@ export default function CaseStudies() {
         <div className="max-w-4xl mx-auto text-center relative">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <span className="text-xs font-semibold text-primary uppercase tracking-widest mb-4 block">Case Studies</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-['Playfair_Display'] font-semibold tracking-tight mb-6">
               Real Results for{" "}
               <span className="gradient-text">Real Enterprises</span>
             </h1>
@@ -91,9 +91,9 @@ export default function CaseStudies() {
         <div className="max-w-5xl mx-auto space-y-12">
           {caseStudies.map((cs, i) => (
             <FadeIn key={cs.company} delay={i * 0.1}>
-              <div className="rounded-3xl border border-[hsl(220,25%,18%)] bg-[hsl(220,28%,11%)] overflow-hidden hover:border-primary/20 transition-colors">
+              <div className="rounded border border-[#E5E7EB] bg-white overflow-hidden hover:border-[#2D6A4F]/30 transition-colors">
                 {/* Top bar */}
-                <div className="px-8 pt-8 pb-6 border-b border-[hsl(220,25%,16%)]">
+                <div className="px-8 pt-8 pb-6 border-b border-[#E5E7EB]">
                   <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                     <div>
                       <span className="inline-block px-3 py-1 text-xs font-semibold text-primary bg-primary/10 border border-primary/20 rounded-full mb-3">{cs.industry}</span>
@@ -108,7 +108,7 @@ export default function CaseStudies() {
                   {/* Metrics */}
                   <div className="grid grid-cols-3 gap-4 mt-6">
                     {cs.metrics.map((m) => (
-                      <div key={m.label} className="text-center p-4 rounded-xl bg-[hsl(220,28%,14%)] border border-[hsl(220,25%,20%)]">
+                      <div key={m.label} className="text-center p-4 rounded bg-[#FDFBF7] border border-[#E5E7EB]">
                         <div className="text-2xl font-extrabold gradient-text mb-1">{m.value}</div>
                         <div className="text-xs text-muted-foreground">{m.label}</div>
                       </div>
@@ -146,14 +146,13 @@ export default function CaseStudies() {
       <section className="py-20 px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <FadeIn>
-            <div className="relative p-12 rounded-3xl overflow-hidden text-center border border-primary/20 bg-gradient-to-br from-primary/10 via-[hsl(220,28%,12%)] to-violet-900/10">
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
-              <h2 className="text-2xl md:text-3xl font-extrabold mb-4">Your Success Story Starts Here</h2>
-              <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">
+            <div className="p-12 rounded text-center border border-[#E5E7EB] bg-[#FDFBF7]">
+              <h2 className="text-2xl md:text-3xl font-['Playfair_Display'] font-semibold text-[#1C1C1E] mb-4">Your Success Story Starts Here</h2>
+              <p className="text-[#6B7280] text-lg mb-8 max-w-xl mx-auto font-light">
                 Every client on this page started with a conversation. Let's have one.
               </p>
               <Link href="/contact">
-                <span className="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold bg-primary text-[hsl(220,30%,8%)] rounded-xl hover:bg-primary/90 transition-all cursor-pointer shadow-xl shadow-primary/30 hover:-translate-y-0.5">
+                <span className="inline-flex items-center gap-2 px-8 py-4 text-base font-medium bg-[#2D6A4F] text-white rounded hover:bg-[#1B4332] transition-all cursor-pointer">
                   Start the Conversation
                   <RiArrowRightLine size={18} />
                 </span>

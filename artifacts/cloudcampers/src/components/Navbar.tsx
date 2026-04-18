@@ -33,8 +33,8 @@ export default function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[hsl(220,30%,8%)]/95 backdrop-blur-md border-b border-[hsl(220,25%,18%)]"
-          : "bg-transparent"
+          ? "bg-white/95 backdrop-blur-md border-b border-[#E5E7EB] shadow-sm"
+          : "bg-[#FAF8F4]/80 backdrop-blur-sm"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -51,10 +51,10 @@ export default function Navbar() {
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href}>
                 <span
-                  className={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-200 cursor-pointer ${
+                  className={`px-4 py-2 text-sm font-medium rounded transition-all duration-200 cursor-pointer ${
                     location === link.href
-                      ? "text-primary bg-primary/10"
-                      : "text-muted-foreground hover:text-foreground hover:bg-white/5"
+                      ? "text-[#2D6A4F] bg-[#2D6A4F]/8"
+                      : "text-[#6B7280] hover:text-[#1C1C1E] hover:bg-[#1C1C1E]/5"
                   }`}
                 >
                   {link.label}
@@ -66,15 +66,15 @@ export default function Navbar() {
           {/* CTA */}
           <div className="hidden md:flex items-center gap-4">
             <Link href="/contact">
-              <span className="px-5 py-2.5 text-sm font-semibold bg-primary text-[hsl(220,30%,8%)] rounded-lg hover:bg-primary/90 transition-all duration-200 cursor-pointer shadow-lg shadow-primary/25 hover:shadow-primary/40">
-                Get Started
+              <span className="px-5 py-2.5 text-sm font-semibold bg-[#2D6A4F] text-white rounded hover:bg-[#1B4332] transition-all duration-200 cursor-pointer shadow-sm">
+                Schedule Consultation
               </span>
             </Link>
           </div>
 
           {/* Mobile toggle */}
           <button
-            className="md:hidden p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-white/5 transition-colors"
+            className="md:hidden p-2 rounded text-[#6B7280] hover:text-[#1C1C1E] hover:bg-[#1C1C1E]/5 transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
           >
             {mobileOpen ? <RiCloseLine size={22} /> : <RiMenuLine size={22} />}
@@ -90,16 +90,16 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25 }}
-            className="md:hidden bg-[hsl(220,28%,11%)] border-t border-[hsl(220,25%,18%)]"
+            className="md:hidden bg-white border-t border-[#E5E7EB]"
           >
             <div className="px-6 py-4 flex flex-col gap-1">
               {navLinks.map((link) => (
                 <Link key={link.href} href={link.href}>
                   <span
-                    className={`block px-4 py-3 text-sm font-medium rounded-lg transition-colors cursor-pointer ${
+                    className={`block px-4 py-3 text-sm font-medium rounded transition-colors cursor-pointer ${
                       location === link.href
-                        ? "text-primary bg-primary/10"
-                        : "text-muted-foreground hover:text-foreground hover:bg-white/5"
+                        ? "text-[#2D6A4F] bg-[#2D6A4F]/8"
+                        : "text-[#6B7280] hover:text-[#1C1C1E] hover:bg-[#1C1C1E]/5"
                     }`}
                   >
                     {link.label}
@@ -107,8 +107,8 @@ export default function Navbar() {
                 </Link>
               ))}
               <Link href="/contact">
-                <span className="block mt-2 px-4 py-3 text-sm font-semibold text-center bg-primary text-[hsl(220,30%,8%)] rounded-lg cursor-pointer">
-                  Get Started
+                <span className="block mt-2 px-4 py-3 text-sm font-semibold text-center bg-[#2D6A4F] text-white rounded cursor-pointer hover:bg-[#1B4332] transition-colors">
+                  Schedule Consultation
                 </span>
               </Link>
             </div>
