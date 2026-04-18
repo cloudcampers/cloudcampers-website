@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { RiLinkedinFill, RiTwitterFill, RiMailLine, RiPhoneLine, RiMapPinLine } from "react-icons/ri";
+import { CloudCampersFull } from "@/components/CloudCampersLogo";
 
 export default function Footer() {
   return (
@@ -8,16 +9,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center shadow-lg shadow-primary/30">
-                <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5 text-[hsl(220,30%,8%)]" stroke="currentColor" strokeWidth="2.5">
-                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-                  <polyline points="9 22 9 12 15 12 15 22" />
-                </svg>
-              </div>
-              <span className="text-lg font-bold text-foreground">
-                Cloud<span className="text-primary">Campers</span>
-              </span>
+            <div className="mb-5">
+              <CloudCampersFull height={30} />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed mb-6">
               Elite Salesforce and MuleSoft consulting. We help enterprises build the integrations and CRM foundations that scale.
